@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 2</title>
+    <style>
+        body{
+            background-color:beige;
+        }
+        p{
+            color:saddlebrown;
+        }
+        h1{
+            color:green;
+        }
+        input[type=text]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            padding: 12px 20px;
+            transition: 0.6s;
+        }
+        input[type=submit]:hover{
+            background-color: #45a049;
+            padding: 18px 30px;
+            font-size: 30px;
+        }
+        select{
+            width: 100%;
+            padding: 15px 20px;
+        }
+        textarea{
+            width: 100%;
+        }
+        button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+        }
+        button:hover{
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ex 2</h1>
+    <p id="demo">Javascript can change everything.</p>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").style.fontSize = "25px";
+            document.getElementById("demo").style.color = "red";
+            document.getElementById("demo").style.backgroundColor = "yellow";
+        }
+    </script>
+    <button type="button" onclick="myFunction()">Click me !</button>
+
+    <h2 style="color:red; text-align:center; ">Iframe: Website in Website</h2>
+    <br /><br />
+    <iframe src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg" name="a" width="800px" height="600px" title="GG Translate">
+    </iframe>
+    <p><a href="https://vnexpress.net" target="a">vnexpress.net</a></p>
+    <h2>Write something about yourself</h2>
+    <form action="mySQL.php">
+        <label for="fname">First Name:</label><br />
+        <input type="text" id="fname" name="fname" placeholder="Your name is..." /><br />
+        <label for="lname">Last Name:</label><br />
+        <input type="text" id="lname" name="lname" placeholder="Your last name is..." /><br />
+        <label for="country">Country:</label> <br />
+        <select id="country">
+            <option value="Vietnam">Vietnam</option>
+            <option value="Endland">Endland</option>
+            <option value="France">France</option>
+            <option value="China">China</option>
+        </select> <br /><br />
+        <label for="subject">Subject:</label><br />
+        <textarea id="subject" name="subject" placeholder="Write something..." style=" height: 200px"></textarea>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
