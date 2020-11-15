@@ -9,6 +9,7 @@ class car{
 		int year;
 		car(string x, string y, int z){
 			brand=x;
+			model=y;
 			year=z;
 		}
 };
