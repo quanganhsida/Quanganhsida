@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Form 1</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        input[type=text], input[type=email], textarea, text {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            transition: width 2s, height 4s;
+        }
+
+        input[type=submit]:hover {
+                background-color: #45a049;
+                padding: 18px 30px;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Mail-Typing Form 1
+    </h1>
+
+    <div class="container">
+        <form action="abc.php">
+            <label for="emails">Address (separate each email with a comma):</label>
+            <input type="email" id="emails" name="emails" placeholder="To" required multiple />
+            <label for="ccs">CC:</label>
+            <input type="email" id="css" name="ccs" placeholder="Who would you like to see ?" multiple/>
+            <label for="bcc">BCC:</label>
+            <input type="email" id="bcc" name="bcc" placeholder="Who would you like to see in private ?" multiple />
+            <label for="sbj">Subject:</label>
+            <input type="text" id="sbj" name="sbj" placeholder="What is your email about ?" />
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" placeholder="Write your email..." rows="20" required></textarea>
+            <label for="myfile"><span class="input-group-addon"><i class="glyphicon glyphicon-paperclip"></i></span></label>
+            <input type="file" id="myfile" name="myfile" multiple />
+          
+            <input type="submit" value="SEND" />
+        </form>
+    </div>
+</body>
+</html>
