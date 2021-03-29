@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+//str1 is smaller than str2
 bool smaller(string str1, string str2) {
     int n1 = str1.length(), n2 = str2.length();
     if (n1 < n2)
@@ -16,6 +17,8 @@ bool smaller(string str1, string str2) {
     }
 }
 
+//str1 > str2
+//str = str1 - str2
 string minusnumber(string str1, string str2) {
     if (smaller(str1, str2))
         swap(str1, str2);
@@ -46,6 +49,7 @@ string minusnumber(string str1, string str2) {
     return str;
 }
 
+//layout
 int main() {
     int t;
     cin >> t;
