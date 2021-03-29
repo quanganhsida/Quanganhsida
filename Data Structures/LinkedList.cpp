@@ -86,7 +86,7 @@ void addMid(list& l, int x, int k)
 //Nhap vao 1 list bat ki
 void nhap(list& l)
 {
-	cout << "\nNhap so phan tu ban dau cua day: ";
+	cout << "Nhap so phan tu ban dau cua day: ";
 	cin >> n;
 	for (int i = 1; i <= n; i++) {
 		addTail(l, i);
@@ -111,7 +111,7 @@ void menu()
 	int k, x, lc;
 	do {
 		cout << "\n______MENU______\n1_Chen dau.\n2_Chen cuoi."
-			<< "\n3_Chen node co data = k sau vi tri node co data = x."
+			<< "\n3_Chen Node co gia tri x vao sau Node co gia tri k."
 			<< "\n4_Xuat thong tin list.\n0_Thoat.\nBAN CHON ?\n";
 		cin >> lc;
 		switch (lc)
