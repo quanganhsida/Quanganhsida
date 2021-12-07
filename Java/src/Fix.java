@@ -13,11 +13,11 @@ public class Fix {
             
             //2. Create a statement
             Statement statement = conn.createStatement();
+            
+            //3. Execute SQL query
             System.out.println("Nhap cu phap: ");
             String sql1 = sc.nextLine();
             //String sql1 = "INSERT INTO `demo1`(`ID`, `User`, `Password`) VALUES ('2','Quanganhsida','123')";
-            
-            //3. Execute SQL query
             statement.executeUpdate(sql1);
             System.out.println("Insert success !");
             ResultSet rs = statement.executeQuery("select * from demo1");
